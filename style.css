@@ -1,0 +1,405 @@
+/** ---------------------------------------- Universal ---------------------------------------- **/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E1E6E1;
+    color: black;
+}
+
+
+
+/** ---------------------------------------- Navbar ---------------------------------------- **/
+.navbar {
+    width: 100%;
+    padding: 1px 10px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    background-color: #E1E6E1;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+/* ----------- Tabs list ----------- */
+.navbar .tabs {
+    /* flex-grow: 1;
+    flex-shrink: 1; */
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+}
+.navbar .tabs li a {
+    text-decoration: none;
+    color: black;
+    font-size: 3rem;
+    font-family: 'Raleway', sans-serif;
+    padding: 0 1rem;
+    border-right: solid black ;
+    border-top: 0;
+    border-bottom: 0;
+    
+}
+
+.navbar .logo {
+    /* flex-grow: 0.1;
+    flex-shrink: 0.1; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar .logo img {
+    width: 5rem;
+    height: 5rem;
+    
+}
+
+.navbar .search {
+    display: flex;
+   padding: 5px;
+}
+.navbar .search input {
+    border: 0;
+    outline: 2px solid black;
+    border-radius: 8px;
+    width: 100%;
+    padding: 2px 5px;
+}
+
+.navbar .search button {
+    margin: 0 5px;
+    background: none;
+    border: 0;
+}
+
+/** ---------------------------------------- Container ---------------------------------------- **/
+#container {
+    margin-top: 100px;
+}
+
+/** ---------------------------------------- Introduction ---------------------------------------- **/
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 50px;
+    margin: 2rem 0;
+}
+
+
+.intro .intro-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 30px;
+    margin-top: 1.5rem;
+}
+.intro .intro-description .announcement {
+    font-size: 1rem;
+    text-decoration: underline;
+    font-weight: bolder;
+    /* margin-bottom: 0.9rem; */
+}
+.intro .intro-description .intro-heading {
+    font-size: 5rem;
+}
+.intro .intro-description .intro-subheading {
+    font-size: 1.4rem;
+}
+.intro .intro-button {
+    align-self: flex-start;
+    margin-top: 3rem;
+    color: white;
+    background-color: #F85A3E;
+    border: 1px solid black;
+    padding: 0.6rem 1rem;
+    font-size: 3rem;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.intro .intro-photo {
+    background-image: url(/Assests/images/mob1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 480px;
+}
+
+/** ---------------------------------------- Services ---------------------------------------- **/
+.services {
+    margin: 3rem 0;
+    padding: 0 7rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.services-field {
+    padding: 10px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(to right, #F50004, #B80003); */
+    background-color: #E63B2E;
+    border-radius: 2rem;
+    border: 1px solid black;
+}
+.services-field h2 {
+    font-size: 3rem;
+    margin: 1rem 0;
+    color: antiquewhite;
+}
+
+.serv-img {
+    width: 8rem;
+    height: 8rem;
+}
+.serv-sel {
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+/** ---------------------------------------- Description ---------------------------------------- **/
+.descr {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+/** ---------------------------------------- Description-left ---------------------------------------- **/
+.descr-left {
+    width: 45%;
+    height: 50rem;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.lbox-1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #E15634;
+    position: absolute;
+    width: 40rem;
+    height: 50rem;
+    top: 0;
+    left: 0;
+    border-radius: 2rem;
+    
+}
+.lbox-1 h2 {
+    color: white;
+    margin: 20px 0 0 90px;
+    font-size: 3.5rem;
+}
+
+.lbox-2 {
+    background-color: #FF7733;
+    color: whitesmoke;
+    position: absolute;
+    width: 40rem;
+    height: 50rem;
+    top: 12%;
+    left: 10%;
+    border-radius: 2rem;
+    border: 1px solid black;
+}
+
+/** -------------------- Form -------------------- **/
+.register-form {
+    /* margin: 1rem; */
+    padding: 0.5rem 1rem;
+}
+
+.form-class {
+    margin: 2rem 0px;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap;
+    gap: 2rem; */
+}
+
+.heading-field {
+    margin-top: 2rem;
+}
+.field-name {
+    font-size: 2rem;
+}
+
+.input-field {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.input-div {
+    margin-bottom: 0.7rem;
+}
+
+.form-control-input {
+    border: 0;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    outline: 2px solid black;
+    text-indent: 0.5rem;
+}
+
+.hint-text {
+    margin-top: 0.4rem;
+    padding: 0.1rem;
+    /* font-size: 0.7rem; */
+}
+
+.submit {
+    font-size: 2rem;
+    margin: 0px auto;
+    display: block;
+    padding: 0.5rem 0.8rem;
+    border: 1px solid black;
+    background-color: #E1E6E1;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 1px #0000;
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+
+}
+
+/** ---------------------------------------- Description - right ---------------------------------------- **/
+.descr-right {
+    width: 45%;
+    height: 50rem;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.rbox-1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #E15634;
+    position: absolute;
+    width: 40rem;
+    height: 50rem;
+    top: 0;
+    right: 0;
+    border-radius: 2rem;
+    
+}
+.rbox-1 h2 {
+    color: white;
+    margin: 20px 90px 0 0 ;
+    font-size: 3.5rem;
+}
+
+.rbox-2 {
+    background-color: #FF7733;
+    border: 1px solid;
+    padding: 3rem;
+    position: absolute;
+    width: 40rem;
+    height: 50rem;
+    top: 12%;
+    right: 10%;
+    border-radius: 2rem;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.phone {
+    display: flex;
+    width: 100%;
+    margin: 1rem 1.5rem 2rem 1rem;
+    justify-content: space-between;
+
+}
+.phone .p-name {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.phone .p-name img {
+    margin: 0.5rem;
+}
+.phone .p-name h2 {
+    font-size: 2rem;
+    margin: 0.5rem;
+}
+.phone .p-text {
+    margin-left: 20px;
+    width: 50%;
+    font-size: 1.5rem;
+}
+.phone .p-text ul {
+    margin: 0;
+    padding: 0;
+    list-style: disc;
+}
+.phone .p-text ul li {
+    margin: 0.5rem 0
+}
+
+.socials {
+    display: flex;
+    width: 100%;
+    margin: 2rem 1.5rem 1rem 1rem;
+    justify-content: space-between;
+}
+.socials .s-name {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials .s-name img {
+    margin: 0.5rem;
+}
+.socials .s-name h2 {
+    font-size: 2rem;
+    margin: 0.5rem;
+}
+.socials .s-text {
+    margin-left: 20px;
+    width: 50%;
+    font-size: 1.5rem;
+}
+.socials .s-text ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.socials .s-text ul li {
+    margin: 0.5rem 0;
+    display: flex;
+
+}
+.socials .s-text ul li img {
+    margin-right: 10px;
+}
